@@ -7,6 +7,7 @@ import Register from "./Components/Register"
 import Notes from "./Components/Notes"
 
 import NoteEditor from "./Components/NoteEditor"
+import PublicNote from "./Components/PublicNote"
 
 function App() {
     return (
@@ -49,6 +50,8 @@ function App() {
                                 </ProtectedRoute>
                             }
                         />
+
+                        <Route path="/share/:shareId" element={<PublicNote />} />
 
                         <Route path="*" element={<Navigate to="/" replace />} />
                     </Routes>
