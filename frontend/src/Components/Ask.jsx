@@ -1,5 +1,6 @@
 import { useState } from "react"
 import { Link } from "react-router-dom"
+import Markdown from "react-markdown"
 import { askNotes } from "../services/askAPI"
 import ErrorMessage from "../ui/ErrorMessage"
 import apiMessage from "../utils/apiMessage"
@@ -63,7 +64,10 @@ const Ask = () => {
 
             {answer && (
                 <div className="card answer-card">
-                    <p className="answer">{answer}</p>
+
+                    <div className="answer">
+                        <Markdown>{answer}</Markdown>
+                    </div>
 
                     {sources.length > 0 && (
                         <div className="sources">
