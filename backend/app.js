@@ -4,6 +4,7 @@ const cors = require("cors")
 
 const app = express()
 require("./db/postgres")
+const routes = require("./routers/routes")
 
 const port = process.env.PORT || 3001
 
@@ -20,6 +21,10 @@ app.get("/ping", (req, res) => {
     res.sendStatus(200)
 })
 
+app.use("/api", routes)
+
 app.listen(port, () => {
     console.log("server started on port " + port)
 })
+
+// <!-- ℑ♑︎  亖⌽⎭🂱⎶☀️☀️⌶⍱   -->
