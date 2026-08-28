@@ -332,3 +332,89 @@ button:disabled {
     padding-top: 12px;
     border-top: 1px solid var(--border);
 }
+
+/* ask */
+.answer-card {
+    margin-top: 12px;
+}
+
+.answer {
+    margin: 0;
+    white-space: pre-wrap;
+    line-height: 1.55;
+}
+
+.sources {
+    margin-top: 16px;
+    padding-top: 12px;
+    border-top: 1px solid var(--border);
+}
+
+.sources .muted {
+    margin: 0 0 8px;
+}
+
+.sources .tag {
+    color: var(--primary);
+}
+
+
+
+@media (max-width: 600px) {
+    body {
+        font-size: 16px;
+    }
+
+    .nav-inner {
+        padding: 10px 12px;
+    }
+
+    .nav-links {
+        gap: 10px;
+        font-size: 14px;
+    }
+
+
+    .nav-links .muted {
+        display: none;
+    }
+
+    .toolbar {
+        flex-wrap: wrap;
+    }
+
+    .toolbar .search {
+        flex: 1 1 100%;
+    }
+
+    .toolbar button {
+        width: 100%;
+    }
+
+    .form-card {
+        margin: 20px auto;
+    }
+
+    .editor-actions button,
+    .share-box button {
+        flex: 1;
+    }
+
+    .share-box {
+        align-items: flex-start;
+    }
+
+
+
+
+    .embed iframe,
+    .embed blockquote {
+        max-width: 100% !important;
+    }
+
+    .note-actions {
+        justify-content: flex-start;
+    }
+}
+
+/* // <!-- ℑ♑︎ 亖⌽⎭🂱⎶☀️☀️⌶⍱ -->  */

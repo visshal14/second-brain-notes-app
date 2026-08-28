@@ -22,6 +22,8 @@ const Navbar = () => {
                         <>
 
 
+                            <Link to="/">notes</Link>
+                            <Link to="/ask">ask</Link>
                             <span className="muted">{user.name}</span>
                             <button className="btn-plain" onClick={onLogout}>logout</button>
                         </>
@@ -37,5 +39,5 @@ const Navbar = () => {
         </nav>
     )
 }
-
+// <!-- ℑ♑︎ 亖⌽⎭🂱⎶☀️☀️⌶⍱ --> 
 export default Navbar

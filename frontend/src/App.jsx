@@ -8,6 +8,7 @@ import Notes from "./Components/Notes"
 
 import NoteEditor from "./Components/NoteEditor"
 import PublicNote from "./Components/PublicNote"
+import Ask from "./Components/Ask"
 
 function App() {
     return (
@@ -47,6 +48,15 @@ function App() {
                             element={
                                 <ProtectedRoute>
                                     <NoteEditor />
+                                </ProtectedRoute>
+                            }
+                        />
+
+                        <Route
+                            path="/ask"
+                            element={
+                                <ProtectedRoute>
+                                    <Ask />
                                 </ProtectedRoute>
                             }
                         />
