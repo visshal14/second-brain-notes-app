@@ -1,7 +1,7 @@
 import axios from "axios"
 
 const backendAxios = axios.create({
-    baseURL: import.meta.env.VITE_API_URL
+    baseURL: "https://second-brain-notes-app.onrender.com/api"
 })
 
 

@@ -7,6 +7,16 @@ Save notes with tags and links, search them, embed YouTube / X links, ask questi
 - **Database** — Postgres (Neon)
 - **AI** — Groq API
 
+## Live
+
+**https://second-brain-a5688.web.app/**
+
+> **Please give the backend about 50 seconds on the first request.** The api runs
+> on a free Render instance that sleeps when nobody is using it, so the first
+> login, or the first load of the notes, has to wake it up. It looks stuck while
+> that happens — it is not, the page fills in once the api answers. Everything
+> after that is fast until it goes back to sleep.
+
 ## Folders
 
 ```
